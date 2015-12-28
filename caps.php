@@ -109,7 +109,6 @@ if (count($started_picks) || count($ended_picks)) {
   $output = 'Started picks: ' . implode(', ', $started_picks) . "\nEnded picks: " . implode(', ', $ended_picks);
 
   if (!$suppress) {
-    //mail('6508624669@txt.att.net', 'CAPS Activity', $output);
     mail('brian.pemble@gmail.com', 'CAPS Activity', $output);
   }
 }
